@@ -1,0 +1,43 @@
+---
+title: "mtcars Dataset Analysis Application"
+author: "Kiran Joshi"
+date: "January 5, 2018"
+output: ioslides_presentation
+---
+
+```{r global, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, warning=FALSE)
+```
+
+
+## Why Histograms ?
+
+While performing data analysis, its important to understand how the data is distributed in the observations in order to identify if the data being studied has any kind of pattern when viewed graphically. Histograms which is the distribution of frequency of data into bins are thus useful in identifying normality of the distribution, or if there are any outliers, or to see if the data is skewed in any particular fashion.
+
+## Need for a tool
+
+- Histograms form a part of most data analysis
+- mtcars is a popular dataset, and analysts will be interested in the data distribution
+- its a nice to have feature if we can analyse all variables independently, adjust bins and colors of the histogram and download it as a preferred file type
+- A tool to provide the common operations done on the dataset, like obtain a summary, structure, and view specific data and the histogram of the data can be handy!
+- Avoid repetitive commands to analyze data (as shown below).
+```{r data,echo=TRUE}
+head(mtcars[1],1)
+```
+
+## Shiny applications makes it easy
+
+![screen](C:\Users\Tatha\Documents\Course9 - DevelopingDataProducts\DDP\Screen.png)
+
+## mtcars Dataset Analysis Application
+
+- The application was created locally and uploaded to the shiny site.
+- https://datachurner.shinyapps.io/mtcars_data_analysis/
+- User selects the various inputs on the sidebar, to observe the effects on the main page.
+- Once user is happy with the histogram, they can download it as a PNG or a PDF file to their computer
+
+
+
+
+
+###           Thank You !
